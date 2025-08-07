@@ -1,12 +1,14 @@
-export type Event = {
-    title: string,
-    description: string,
-    images: string[],
-    date: Date
-};
-
-export type Owner = {
+export type User = {
     id: string,
+    name: string,
     email: string,
-    password: string
+    password: string,
+    profileImage: string,
+    bio: string
+}
+
+export type Post = {
+    profileName: string,
+    profileImage: string,
+    description: string
 }
