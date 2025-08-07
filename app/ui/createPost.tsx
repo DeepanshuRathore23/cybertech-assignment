@@ -6,11 +6,24 @@ import { useState } from "react";
 export default function CreatePost() {
   const [description, setDescription] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    //logic will be addedd here
-    console.log("Post submitted:", description);
-    setDescription("");
+
+    const formData = new FormData();
+    formData.append('description', description);
+
+    const res = await fetch('/api/createPost', {
+      method: 'POST',
+      body: formData
+    });
+
+    if(res.ok) {
+      setDescription('');
+      console.log("Post submitted:", description);
+    } else {
+      console.error("Failed to add event at upadateEvent at line 93");
+    }
+
   };
 
   return (

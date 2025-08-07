@@ -1,6 +1,5 @@
 const users = [
   {
-    id: '1',
     name: "Aarav Mehta",
     email: "aarav.mehta@example.com",
     password: "8f2c0d1a7b91",
@@ -8,7 +7,6 @@ const users = [
     bio: "Full Stack Developer with a love for building scalable systems."
   },
   {
-    id: '2',
     name: "Simran Kaur",
     email: "simran.kaur@example.com",
     password: "5d3e9a6f0c29",
@@ -16,7 +14,6 @@ const users = [
     bio: "Creative designer and front-end enthusiast."
   },
   {
-    id: '3',
     name: "Rohan Sharma",
     email: "rohan.sharma@example.com",
     password: "fc1d8e9b4a62",
@@ -24,7 +21,6 @@ const users = [
     bio: "Software engineer passionate about AI and machine learning."
   },
   {
-    id: '4',
     name: "Ananya Patel",
     email: "ananya.patel@example.com",
     password: "c6b14e8c2f98",
@@ -32,7 +28,6 @@ const users = [
     bio: "Product manager driving innovation through data."
   },
   {
-    id: '5',
     name: "Yash Gupta",
     email: "yash.gupta@example.com",
     password: "9e4a73d6f202",
@@ -40,7 +35,6 @@ const users = [
     bio: "Tech blogger and backend developer."
   },
   {
-    id: '6',
     name: "Isha Verma",
     email: "isha.verma@example.com",
     password: "d32e8a7c5e19",
@@ -48,7 +42,6 @@ const users = [
     bio: "UX designer with a passion for user research."
   },
   {
-    id: '7',
     name: "Kabir Nair",
     email: "kabir.nair@example.com",
     password: "a1b2c3d4e5f6",
@@ -56,7 +49,6 @@ const users = [
     bio: "Cloud engineer working with AWS and Azure."
   },
   {
-    id: '8',
     name: "Meera Singh",
     email: "meera.singh@example.com",
     password: "e6d4c2b9a1f3",
@@ -64,7 +56,6 @@ const users = [
     bio: "Digital marketer with experience in SEO and analytics."
   },
   {
-    id: '9',
     name: "Arjun Desai",
     email: "arjun.desai@example.com",
     password: "7c8b9a1d2e3f",
@@ -72,7 +63,6 @@ const users = [
     bio: "DevOps enthusiast and CI/CD expert."
   },
   {
-    id: '10',
     name: "Priya Reddy",
     email: "priya.reddy@example.com",
     password: "b4a9e1c8d2f7",

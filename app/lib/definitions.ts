@@ -8,6 +8,7 @@ export type User = {
 }
 
 export type Post = {
+    user_id: string,
     profileName: string,
     profileImage: string,
     description: string

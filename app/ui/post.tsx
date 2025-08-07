@@ -5,27 +5,29 @@ import { Heart, MessageCircle, Bookmark } from 'lucide-react';
 import { useState } from "react";
 
 type postProps = {
-  profileImage: string,
-  profileName: string,
+  user_id: string,
+  profilename: string,
+  profileimage: string,
   description: string
 };
 
-export default function Post({ profileImage, profileName, description }: postProps) {
+export default function Post({profileimage, profilename, description }: postProps) {
   const [liked, setLiked] = useState(false);
   const [saved, setSaved] = useState(false);
+  // console.log(profileimage);
 
   return (
     <div className="bg-white border border-gray-300 rounded-lg p-4 w-full max-w-2xl shadow-sm hover:shadow-md transition duration-300 ease-in-out mx-auto mt-6">
       {/* Profile Header */}
       <div className="flex items-center gap-4">
         <Image
-          src={profileImage}
+          src={profileimage}
           height={40}
           width={40}
           alt="profile icon"
           className="rounded-full object-cover"
         />
-        <div className="font-semibold text-gray-800">{profileName}</div>
+        <div className="font-semibold text-gray-800">{profilename}</div>
       </div>
 
       {/* Description */}

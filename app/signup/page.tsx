@@ -105,7 +105,7 @@ export default function page() {
         </form>
 
         <p className="text-sm text-gray-600 mt-4 text-center">
-          Already have an account? <Link href="/signin" className="text-blue-600 hover:underline">Sign In</Link>
+          Already have an account? <Link href="/login" className="text-blue-600 hover:underline">Sign In</Link>
         </p>
       </div>
     </main>

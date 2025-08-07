@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import { signOut } from '@/auth';
+import { fetchPostsByUser } from '../lib/data'; 
 
-export default function Page() {
+export default async function Page() {
   // Mock posts (replace with actual fetch later)
-  const posts = [
-    { id: 1, title: 'My first post', content: 'This is the content of my first post.' },
-    { id: 2, title: 'Another day, another post', content: 'Here’s something interesting I wrote.' },
-  ];
+
+  const posts = await fetchPostsByUser();
+  
 
   return (
     <main className="mt-[5vh] max-w-4xl mx-auto p-8 bg-gray-50 min-h-screen">
@@ -47,9 +47,9 @@ export default function Page() {
         <h3 className="text-xl font-semibold text-gray-800 mb-4">Your Posts</h3>
         <div className="space-y-4">
           {posts.map((post) => (
-            <div key={post.id} className="bg-white p-4 rounded-md shadow">
-              <h4 className="text-lg font-bold text-gray-800">{post.title}</h4>
-              <p className="text-gray-700 mt-1">{post.content}</p>
+            <div key={post.description} className="bg-white p-4 rounded-md shadow">
+              {/* <h4 className="text-lg font-bold text-gray-800">{post.title}</h4> */}
+              <p className="text-gray-700 mt-1">{post.description}</p>
             </div>
           ))}
         </div>
